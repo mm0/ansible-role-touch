@@ -2,7 +2,7 @@
   roles:
     - { role: ansible-role-touch,
       files: ["/tmp/file","/tmp/file2"],
-      owner: ubuntu,
-      group: ubuntu,
+      owner: travis,
+      group: travis,
       mode: "0755"
     }
