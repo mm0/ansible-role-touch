@@ -18,10 +18,10 @@ None
 
 Available variables are listed below, along with default values:
 
-    owner: ubuntu # owner of final directory uploaded remotely
-		group: ubuntu 
-		mode: 644 # mode for remote directory
-		files: # a list of files to touch
+  owner: ubuntu # owner of final directory uploaded remotely
+  group: ubuntu 
+  mode: 644 # mode for remote directory
+  files: # a list of files to touch
 
 ## Dependencies
 
@@ -31,12 +31,12 @@ None
 
     - hosts: webservers
       roles:
-			- { role: ansible-role-touch,
-					files: ["/var/log/mylog","/var/log/mylog.2""],
-					owner: ubuntu,
-					group: ubuntu,
-					mode: "0755"
-				}
+      - { role: ansible-role-touch,
+          files: ["/var/log/mylog","/var/log/mylog.2""],
+          owner: ubuntu,
+          group: ubuntu,
+          mode: "0755"
+        }
 
 ## License
 
