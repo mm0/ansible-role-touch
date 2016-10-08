@@ -18,10 +18,10 @@ None
 
 Available variables are listed below, along with default values:
 
-  owner: ubuntu # owner of final directory uploaded remotely
-  group: ubuntu 
-  mode: 644 # mode for remote directory
-  files: # a list of files to touch
+    owner: ubuntu # owner of final directory uploaded remotely
+    group: ubuntu 
+    mode: 644 # mode for remote directory
+    files: # a list of files to touch
 
 ## Dependencies
 
