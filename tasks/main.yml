@@ -1,0 +1,5 @@
+---
+- name: Touch files
+  file: state=touch owner={{ owner }} group={{ group }} mode={{ mode }} dest={{ item }}
+  with_items:  "{{ files }}"
+
