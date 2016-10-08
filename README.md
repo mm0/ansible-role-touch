@@ -1,7 +1,5 @@
 # README.md
 
-![travis-ci](https://travis-ci.org/mm0/ansible-role-touch.svg?branch=master)
-
 # Ansible Role: Touch v1.0
 
 An Ansible role that simply runs the touch module.
@@ -9,6 +7,8 @@ An Ansible role that simply runs the touch module.
 Occassionally, you will need to touch a file between role executions, there is no built-in way to do this, instead use this role in between.
 
 See Also: ansible-role-directory
+
+![travis-ci](https://travis-ci.org/mm0/ansible-role-touch.svg?branch=master)
 
 ## Requirements
 
