@@ -1,4 +1,7 @@
 # README.md
+
+![travis-ci](https://travis-ci.org/mm0/ansible-role-touch.svg?branch=master)
+
 # Ansible Role: Touch v1.0
 
 An Ansible role that simply runs the touch module.
