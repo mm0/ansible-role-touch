@@ -1,6 +1,7 @@
-# README.md
+Ansible Role: Touch v1.0
+===
 
-# Ansible Role: Touch v1.0
+[![Build Status](https://travis-ci.org/mm0/ansible-role-touch.svg?branch=master)](https://travis-ci.org/mm0/ansible-role-touch)
 
 An Ansible role that simply runs the touch module.
 
@@ -8,36 +9,51 @@ Occassionally, you will need to touch a file between role executions, there is n
 
 See Also: ansible-role-directory
 
-![travis-ci](https://travis-ci.org/mm0/ansible-role-touch.svg?branch=master)
 
-## Requirements
+Requirements
+--
 
 None 
 
-## Role Variables
+Role Variables
+--
 
 Available variables are listed below, along with default values:
 
-    owner: ubuntu # owner of final directory uploaded remotely
-    group: ubuntu 
-    mode: 644 # mode for remote directory
-    files: # a list of files to touch
+```yml
+owner: ubuntu # owner of final directory uploaded remotely
+group: ubuntu 
+mode: 644 # mode for remote directory
+files: # a list of files to touch
+```
 
-## Dependencies
+Dependencies
+--
 
 None 
 
-## Example Playbook
+Example Playbook
+--
 
-    - hosts: webservers
-      roles:
-      - { role: ansible-role-touch,
-          files: ["/var/log/mylog","/var/log/mylog.2""],
-          owner: ubuntu,
-          group: ubuntu,
-          mode: "0755"
-        }
+```yml
+- hosts: webservers
+  roles:
+  - { role: ansible-role-touch,
+      files: ["/var/log/mylog","/var/log/mylog.2""],
+      owner: ubuntu,
+      group: ubuntu,
+      mode: "0755"
+    }
+```
 
-## License
+License
+---------------
 
-MIT
+BSD-2
+
+Author Information
+------------------
+
+[Matt Margolin](mailto:matt.margolin@gmail.com)
+
+[mm0](https://github.com/mm0) on github
